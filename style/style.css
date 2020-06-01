@@ -49,3 +49,20 @@ You can use either use the social icons provided or load in a font icon library.
 
 
 */
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

@@ -5,81 +5,157 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style/style.css">
+  <script src="/js/main.js" async></script>
   
   <title>Frontend Mentor | Insure landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+<header>
+    <div class="logo-image header-logo">
+        <img src="./images/logo.svg" alt="Insure" class="logo">
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li>
+                <a href="#">How we work</a>
+                <a href="#">Blog</a>
+                <a href="#">Account</a>
+                <a href="#">View plans</a>
+            </li>
+        </ul>   
+    </nav>
+</header>
+<main>
 
-  How we work
-  Blog
-  Account
-  View plans
+    <section class="hero">
+        <div class="hero-image">
+            <img src="/images/image-intro-mobile.jpg" 
+                alt=""
+                srcset="/images/image-intro-mobile.jpg 375w,
+                    /images/image-intro-desktop.jpg 540w"
+                sizes="(max-width: 850px) 375w, 540w">
+        </div> <!-- End hero-image -->
+        <div class="hero-text">
+            <h1>Humanizing your insurance.</h1>
 
-  Humanizing your insurance.
+            <p>
+                Get your life insurance coverage easier and faster. We blend our expertise 
+                and technology to help you find the plan that’s right for you. Ensure you 
+                and your loved ones are protected.
+            </p>
 
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
+            <div class="button"></div>
+            <button type="button">
+                View plans
+            </button>
+        
+            
+        </div> <!-- End hero-text -->
+    </section> <!-- End hero -->
 
-  View plans
+    <section class="different">
+        <h2>We’re different</h2>
 
-  We’re different
+        <div class="card card1">
+            <img src="/images/icon-snappy-process.svg" alt="A lightning bolt">
+            <h3>Snappy Process</h3>
+            <p>
+                Our application process can be completed in minutes, not hours. Don’t get 
+                stuck filling in tedious forms.
+            </p>
+        </div> <!-- End card-->
 
-  Snappy Process
+        <div class="card card2">
+            <img src="/images/icon-affordable-prices.svg" alt="Dollar Sign">
+            <h3>Affordable Prices</h3>
+            <p>
+                We don’t want you worrying about high monthly costs. Our prices may be low, 
+                but we still offer the best coverage possible.
+            </p>
+        </div> <!-- End card-->
+        <div class="card card3">
+            <img src="/images/icon-people-first.svg" alt="Profile Image Icon">
+            <h3>People First</h3>
+            <p>
+                Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+                sure you’re covered when you need it.
+            </p>
+        </div> <!-- End card-->
+    </section> <!-- End different -->
 
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
+    <section class="how">
+        <div class="how-text">
+            <h2>Find out more about how we work</h2>
+        </div> <!-- End how-text -->
+        <div class="how-button">
+            <button type-="button">
+                How we work
+            </button>
+        </div> <!-- End how-button -->
+        
+    </section> <!-- End how -->
+</main>
+<footer>
+    <div class="footer-header">
+        <div class="footer-logo">
+            <img src="/images/logo.svg" alt="Insure">
+        </div>
+        <div class="social-icons">
+            <ul>
+                <li><a href="#"><img src="/images/icon-facebook.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="/images/icon-twitter.svg" alt="twitter"></a></li>
+                <li><a href="#"><img src="/images/icon-pinterest.svg" alt="pinterest"></a></li>
+                <li><a href="#"><img src="/images/icon-instagram.svg" alt="instagram"></a></li>
+            </ul>
+        </div>
+    </div> <!-- End footer-header -->
+    <div class="footer-lists">
+        <section class="footer-section" id="footer-section-1">
+            <h2>Our company</h2>
+            <ul>
+                <li><a href="#">How we work</a></li>
+                <li><a href="#">Why Insure?</a></li>
+                <li><a href="#">View plans</a></li>
+                <li><a href="#">Reviews</a></li>
+            </ul>
+        </section> <!-- End footer-section-1 -->
+        <section class="footer-section" id="footer-section-1">
+            <h2>Help me</h2>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </section> <!-- End footer-section-1 -->
+        <section class="footer-section" id="footer-section-1">
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Live chat</a></li>         
+            </ul>
+        </section> <!-- End footer-section-1 -->
+        <section class="footer-section" id="footer-section-1">
+            <h2>Others</h2>
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Licenses</a></li>
+            </ul>
+        </section> <!-- End footer-section-1 -->
+    </div> <!-- End footer-lists -->
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://lauraho.net">Laura Ho</a>.
+    </div> <!-- End attribution -->
+</footer>
 
-  Affordable Prices
-
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
-
-  People First
-
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
-
-  Find out more about how we work
-
-  How we work
-
-  Our company
-
-  How we work
-  Why Insure?
-  View plans
-  Reviews
-
-  Help me
-
-  FAQ
-  Terms of use
-  Privacy policy
-  Cookies
-
-  Contact
-
-  Sales
-  Support
-  Live chat
-
-  Others
-
-  Careers
-  Press
-  Licenses
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
