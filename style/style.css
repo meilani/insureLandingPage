@@ -75,26 +75,52 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+p {
+    max-width: 500px;
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
-.btn-border {
+button {
     background: transparent;
     color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    text-transform: uppercase;
     font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    border:none;
     font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 1.36px;
+}
+
+.btn-border {
+    border: 2px solid #FFFFFF;
     font-size: 13px;
+    line-height: 15px;
     letter-spacing: 1.5px;
     padding: 10px 26px;
     cursor: pointer;
 }
 
+.btn-border:hover {
+    color: #2D2641;
+    background: #FFFFFF;
+}
+
 .hide {
     display: none;
+}
+
+.line {
+    width: 150px;
+    border-bottom: 1px solid;
+}
+
+.purple-line {
+    border-bottom-color: #C396C6;
 }
 
 
@@ -113,7 +139,7 @@ header {
 
 .header-logo {
     margin-left: 24px;
-
+    margin-bottom: 24px;
 }
 
 
@@ -123,31 +149,31 @@ header {
 
 .header-nav {
     width: 100%;
-
 }
 
 #hamburger {
     margin-right: 24px;
 }
 
+.header-hamburger {
+    margin-bottom: 24px;
+}
+
 #main-menu {
+    padding: 40px 24px;
     background-color: #2D2641;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 24px;
+
 }
 
 #main-menu li {
     list-style-type: none;
-}
-
-#main-menu li:active,
-#main-menu li:focus,
-#main-menu li:target {
-    border: 2px solid #FFFFFF;
+    width: 100%;
+    text-align: center;
 }
 
 #main-menu li a {
@@ -159,6 +185,17 @@ header {
     line-height: 40px;
     letter-spacing: 1.36px;
     
+}
+
+#main-menu li button {
+    width: 100%;
+    padding: 12px;
+}
+
+#main-menu li button:focus,
+#main-menu li button:hover {
+    outline: 2px solid #FFFFFF;
+    cursor: pointer;
 }
 
 
@@ -173,13 +210,79 @@ header {
 ****************/
 
 .hero {
-
     background-color: #2D2641;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text {
+    padding: 72px 40px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.67px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 30px;
 }
 
 /****************
     DIFFERENT
 ****************/
+
+.different {
+    padding: 140px 24px 84px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.purple-line {
+    margin-bottom: 40px;
+}
+
+.different h2 {
+    font-size: 48px;
+    font-family: 48px;
+    letter-spacing: -0.67px;
+    margin-bottom: 80px;
+    color: #2C2830;
+}
+
+.card {
+    margin-bottom: 56px;
+}
+
+.card img {
+    margin-bottom: 35px;
+}
+
+.card h3 {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.39px;
+    margin-bottom: 16px;
+    color: #2C2830;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0;
+    color: #837D88;
+}
 
 /****************
     HOW
@@ -191,6 +294,16 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 24px;
+    padding: 72px 40px;
+}
+
+.how h2 {
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.56px;
+    margin-bottom: 40px;
 }
 
 /****************
@@ -199,15 +312,80 @@ header {
 
 footer {
     background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 88px 24px 50px 24px;
+    text-align: center;
 }
+
+
 
 /****************
     FOOTER HEADER
 ****************/
 
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    margin-bottom: 40px;
+}
+
+.social-icons ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 8px;
+}
+
+.long-line {
+    width: 327px;
+    border-bottom: 1px solid #DADADA;
+    margin-bottom: 40px;
+}
+
 /****************
     FOOTER LISTS
 ****************/
+
+.footer-lists {
+    margin-bottom: 50px;
+}
+
+.footer-lists ul {
+    margin-bottom: 40px;
+}
+
+.footer-lists ul li {
+    list-style-type: none;
+    margin-bottom: 16px;
+}
+
+
+.footer-lists ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-family: 13px;
+    line-height: 15px;
+    letter-spacing: 1.5px;
+    color: #2D2641;
+
+}
+
+.footer-section h2 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.5px;
+    color: #837D88;
+    margin-bottom: 38px;
+    text-transform: uppercase
+}
 
 /****************
     FOOTER ATTR
