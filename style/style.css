@@ -114,6 +114,35 @@ button {
     display: none;
 }
 
+.up {
+    animation-duration: 1s;
+    animation-name: slideUp;
+}
+
+.show {
+    animation-duration: 1s;
+    animation-name: slideDown;
+}
+
+@keyframes slideDown {
+    from {
+        margin-top: -700px;
+    }
+    to {
+        margin-top: 0px;
+    }
+}
+@keyframes slideUp {
+    from {
+        margin-top: 0px;
+    }
+    to {
+        margin-top: -700px;
+    }
+}
+
+
+
 .line {
     width: 150px;
     border-bottom: 1px solid;
@@ -156,12 +185,22 @@ header {
     background: url(../images/bg-pattern-mobile-nav.svg) bottom center no-repeat;
     background-size: 100% 200px;
     background-color: #2C2830;
-    padding-bottom: 200px
+    padding-bottom: 200px;
+    z-index: -10;
 
 }
 
 #hamburger {
     margin-right: 24px;
+    cursor: pointer;
+}
+
+.open {
+    content: url(../images/icon-close.svg);
+}
+
+.closed {
+    content: url(../images/icon-hamburger.svg);
 }
 
 .header-hamburger {
@@ -461,6 +500,11 @@ footer {
 }
 
 @media (min-width: 892px) {
+
+    .hide {
+        display: block;
+        top: 0;
+    }
 
 /****************
     DESKTOP HEADER
