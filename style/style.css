@@ -194,13 +194,13 @@ header {
 
 #main-menu li button {
     width: 100%;
-    padding: 12px;
+    padding: 12px 0;
+    cursor: pointer;
 }
 
-#main-menu li button:focus,
-#main-menu li button:hover {
+#main-menu #view-button {
     outline: 2px solid #FFFFFF;
-    cursor: pointer;
+    
 }
 
 
@@ -445,5 +445,61 @@ footer {
 @media (min-width: 850px) {
     .footer-section {
         width: 25%;
+    }
+
+    .header-nav {
+        background: transparent;
+        padding-bottom: 0;
+        width: 70%;
+        max-width: 500px;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #main-menu {
+        flex-direction: row;
+        padding: 0 24px 30px 24px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #main-menu li {
+        text-align: right;
+    }
+
+    #main-menu li a {
+        color: #837D88;
+    }
+
+    #main-menu li button:hover {
+        color: #2C2830;
+        transition: all .5s ease;
+    }
+
+    #main-menu li button {
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 1.5px;
+        padding: 12px 0;
+        color: #837D88;
+        text-align: center;
+    }
+
+    #main-menu #account-button {
+        padding-right: 30px;
+    }
+
+    #main-menu #view-button {
+        border: 2px solid #2C2830;
+        color: #2C2830;
+        transition: all .5s ease;
+        text-align: center;
+    }
+
+    #main-menu #view-button:hover {
+        background-color: #2C2830;
+        color: #FFFFFF;
     }
 }
