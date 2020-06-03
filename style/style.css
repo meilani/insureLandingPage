@@ -123,6 +123,10 @@ button {
     border-bottom-color: #C396C6;
 }
 
+.white-line {
+    border-bottom-color: #FFFFFF;
+}
+
 
 /****************
     HEADER
@@ -237,6 +241,10 @@ header {
     background-repeat: no-repeat;
 }
 
+.hero-text .white-line {
+    display: none;
+}
+
 .hero-text h1 {
     font-size: 48px;
     line-height: 48px;
@@ -273,6 +281,11 @@ header {
     letter-spacing: -0.67px;
     margin-bottom: 80px;
     color: #2C2830;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
 }
 
 .card {
@@ -368,6 +381,11 @@ footer {
     FOOTER LISTS
 ****************/
 
+.footer-header {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-lists {
     margin-bottom: 50px;
     width: 100%;
@@ -442,11 +460,11 @@ footer {
     }
 }
 
-@media (min-width: 850px) {
-    .footer-section {
-        width: 25%;
-    }
+@media (min-width: 892px) {
 
+/****************
+    DESKTOP HEADER
+****************/
     .header-nav {
         background: transparent;
         padding-bottom: 0;
@@ -457,6 +475,10 @@ footer {
     #hamburger {
         display: none;
     }
+
+/****************
+    DESKTOP MENU
+****************/
 
     #main-menu {
         flex-direction: row;
@@ -501,5 +523,142 @@ footer {
     #main-menu #view-button:hover {
         background-color: #2C2830;
         color: #FFFFFF;
+    }
+
+/****************
+    DESKTOP HERO
+****************/
+
+    .hero {
+        text-align: left;
+    }
+
+    .hero-content {    
+        display: flex;    
+        flex-direction: row-reverse;
+        justify-content: space-around;
+       background: url(../images/bg-pattern-intro-left-desktop.svg) left 300px no-repeat;
+       padding-bottom: 300px;
+       margin-bottom: -315px;
+        width: 100%;
+    }
+
+    .hero-image {
+        max-width: 540px;
+        padding-right: 15px;
+    }
+
+    .hero-image img {
+        position: relative;
+        top: 100px;
+    }
+
+    .hero-text {
+        align-items: flex-start;
+        padding-left: 65px;
+        max-width: 600px;
+        background: transparent;
+        padding-top: 100px;
+    }
+
+    .hero-text .white-line {
+        display: block;
+        margin-bottom: 65px;
+    }
+
+    .hero-text h1 {
+        font-size: 72px;
+        line-height: 64px;
+        margin-bottom: 20px;
+    }
+
+/****************
+    DESKTOP DIFFERENT
+****************/
+
+.different {
+    text-align: left;
+    align-items: flex-start;
+    padding: 250px 165px 150px 165px;
+}
+
+.different h2 {
+    font-size: 72px;
+    line-height: 64px;
+    letter-spacing: -1px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card {
+    max-width: 350px;
+    margin: 25px;
+}
+
+/****************
+    DESKTOP HOW
+****************/
+
+.how {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 100px 150px 100px;
+    background: url(../images/bg-pattern-how-we-work-desktop.svg) top right no-repeat;
+    background-size: auto 100%;
+    background-color: #2D2641;
+}
+
+.how h2 {
+    margin-bottom: 0;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.78px;
+    max-width: 475px;
+}
+
+
+/****************
+    DESKTOP FOOTER
+****************/
+
+    footer {
+        background: url(../images/bg-pattern-footer-desktop.svg) no-repeat;
+        background-color: #FAFAFA;
+        padding: 64px 100px;
+    }
+
+    .footer-header {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer-section {
+        width: 25%;
+    }
+
+    .footer-lists {
+        text-align: left;
+    }
+
+    .long-line {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .how {
+        margin: 0 165px 150px 165px;
+    }
+
+    footer {
+        padding: 64px 165px;
     }
 }
