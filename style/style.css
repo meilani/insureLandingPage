@@ -68,6 +68,9 @@ button {
 .btn-border:hover {
     color: #2D2641;
     background: #FFFFFF;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 .hide {
