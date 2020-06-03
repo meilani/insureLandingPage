@@ -149,6 +149,11 @@ header {
 
 .header-nav {
     width: 100%;
+    background: url(../images/bg-pattern-mobile-nav.svg) bottom center no-repeat;
+    background-size: 100% 200px;
+    background-color: #2C2830;
+    padding-bottom: 200px
+
 }
 
 #hamburger {
@@ -161,7 +166,7 @@ header {
 
 #main-menu {
     padding: 40px 24px;
-    background-color: #2D2641;
+
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -217,10 +222,19 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
+
 }
 
 .hero-text {
-    padding: 72px 40px;
+    width: 100%;
+    padding: 72px 0 175px 0;
+    margin: 0 0 -100px 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../images/bg-pattern-intro-left-mobile.svg) left top, 
+    url(../images/bg-pattern-intro-right-mobile.svg) right 200px;
+    background-repeat: no-repeat;
 }
 
 .hero-text h1 {
@@ -289,6 +303,7 @@ header {
 ****************/
 
 .how {
+    background: url(../images/bg-pattern-how-we-work-mobile.svg) top right no-repeat;
     background-color: #2D2641;
     display: flex;
     flex-direction: column;
@@ -296,6 +311,7 @@ header {
     align-items: center;
     margin: 0 24px;
     padding: 72px 40px;
+    margin-bottom: 140px;
 }
 
 .how h2 {
@@ -311,6 +327,8 @@ header {
 ****************/
 
 footer {
+    background: url(../images/bg-pattern-footer-mobile.svg) top center no-repeat;
+    background-size: 100% 170px;
     background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
@@ -352,6 +370,13 @@ footer {
 
 .footer-lists {
     margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 100%;
 }
 
 .footer-lists ul {
@@ -397,3 +422,15 @@ footer {
 /****************
     MEDIA QUERIES
 ****************/
+
+@media (min-width: 650px) {
+    .footer-section {
+        width: 50%;
+    }
+}
+
+@media (min-width: 850px) {
+    .footer-section {
+        width: 25%;
+    }
+}
