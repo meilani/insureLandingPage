@@ -280,6 +280,10 @@ header {
 
 }
 
+.hero-content {
+    width: 100%;
+}
+
 .hero-text {
     width: 100%;
     padding: 72px 24px 175px 24px;
@@ -545,6 +549,17 @@ footer {
 
 .icon path:hover {
     fill: #2C2830;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
 }
 
 /****************
